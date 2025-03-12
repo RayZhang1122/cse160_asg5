@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Asg 5</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #c {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .form-group {
+            position: absolute;
+            right: 2em;
+            top: 2em;
+            color: white;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            background-color: rgba(20, 20, 20, 0.3);
+        }
+
+        .form-item {
+            margin: 0.8em;
+        }
+
+        select {
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+    </style>
+    <script type="module" crossorigin src="/assets/three.js"></script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<form class="form-group">
+    <div class="form-item">
+        <label for="shape">Shape</label>
+        <select name="shape" id="shape"></select>
+    </div>
+    <div class="form-item">
+        <label for="light">Light</label>
+        <select name="light" id="light"></select>
+    </div>
+    <div class="form-item">
+        <label for="sky">Skybox</label>
+        <input type="checkbox" name="sky" id="sky"/>
+    </div>
+    <div class="form-item">
+        <label for="fog">Fog</label>
+        <input type="checkbox" name="fog" id="fog"/>
+    </div>
+    <div class="form-item">
+        <label for="texture">Texture</label>
+        <input type="checkbox" name="texture" id="texture"/>
+    </div>
+    <div class="form-item">
+        <label for="shadow">Shadow</label>
+        <input type="checkbox" name="shadow" id="shadow"/>
+    </div>
+</form>
+
+</body>
+</html>
